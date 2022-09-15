@@ -4,7 +4,7 @@
   "description": "Hostinger Redesign Website",
   "main": "index.js",
   "scripts": {
-    "dev":"vite"
+    "dev":"vite --host"
   },
   "repository": {
     "type": "git",

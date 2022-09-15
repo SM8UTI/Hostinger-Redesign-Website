@@ -1,1 +1,36 @@
-/*# sourceMappingURL=main.css.map */
+:root {
+  --neutral-100:#ffffff;
+  --black-100:#121212;
+  --gray-100:#B3A5B3;
+  --blue-500:#620AF2;
+  --blue-800:#2F1C6A;
+  --blue-gradient:linear-gradient(43.48deg, #4312A5 -3.88%, #6233DF 32.32%, #849BFF 137.32%);
+}
+
+:root {
+  --ff-main:"Manrope",sans-serif;
+  --sm-12:0.75rem;
+  --sm-16:1rem;
+  --sm-20:1.25rem;
+  --sm-28:1.75rem;
+  --md-32:2rem;
+  --md-40:2.5rem;
+  --lg-56:3.5rem;
+  --lg-80:5rem;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--ff-main);
+  color: var(--neutral-100);
+  background-color: var(--black-100);
+}/*# sourceMappingURL=main.css.map */
