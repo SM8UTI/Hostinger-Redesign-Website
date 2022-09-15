@@ -1,0 +1,23 @@
+{
+  "name": "hostinger",
+  "version": "1.0.0",
+  "description": "Hostinger Redesign Website",
+  "main": "index.js",
+  "scripts": {
+    "dev":"vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SM8UTI/Hostinger-Redesign-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SM8UTI/Hostinger-Redesign-Website/issues"
+  },
+  "homepage": "https://github.com/SM8UTI/Hostinger-Redesign-Website#readme",
+  "dependencies": {
+    "vite": "^3.1.0"
+  }
+}
