@@ -1,3 +1,9 @@
+:root{
+    --mobile-header-cl:0rem;
+    --header-cl:4.625rem;
+    --header-ol:22.25rem;
+}
+
 *,*::after,*::before{
     box-sizing: border-box;
     margin: 0;
@@ -12,4 +18,15 @@ body{
     font-family: var(--ff-main);
     color: var(--neutral-100);
     background-color: var(--black-100);
+    padding: 2rem 2rem 2rem 8rem;
+    transition: .5s;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: var(--neutral-100);
+    text-decoration: none;
 }

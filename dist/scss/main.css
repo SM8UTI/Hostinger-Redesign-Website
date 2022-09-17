@@ -4,6 +4,7 @@
   --gray-100:#B3A5B3;
   --blue-500:#620AF2;
   --blue-800:#2F1C6A;
+  --header-hv:rgba(98,51,223)
   --blue-gradient:linear-gradient(43.48deg, #4312A5 -3.88%, #6233DF 32.32%, #849BFF 137.32%);
 }
 
@@ -17,6 +18,12 @@
   --md-40:2.5rem;
   --lg-56:3.5rem;
   --lg-80:5rem;
+}
+
+:root {
+  --mobile-header-cl:0rem;
+  --header-cl:4.625rem;
+  --header-ol:22.25rem;
 }
 
 *, *::after, *::before {
@@ -33,4 +40,196 @@ body {
   font-family: var(--ff-main);
   color: var(--neutral-100);
   background-color: var(--black-100);
+  padding: 2rem 2rem 2rem 8rem;
+  transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--neutral-100);
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--blue-500);
+  width: var(--mobile-header-cl);
+  height: 100vh;
+  z-index: 999;
+  transition: width 1000ms ease-in-out;
+}
+.header .nav {
+  width: 100%;
+  margin-top: 6rem;
+  translate: -300px 0;
+  transition: translate 1000ms ease-in-out;
+}
+.header .nav-menu-item {
+  transition: 0.5s;
+}
+.header .nav-menu-item-btn {
+  padding: 1rem 4rem 1rem 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+.header .nav-menu-item-btn p {
+  font-size: var(--sm-20);
+  font-weight: 600;
+  color: var(--neutral-100);
+}
+.header .nav-menu-item-btn svg {
+  transition: 0.4s;
+}
+.header .nav-menu-item-btn:hover, .header .nav-menu-item-btn:focus {
+  border-left: 3px solid var(--black-100);
+}
+.header .nav-menu-item-links {
+  display: none;
+  padding: 1rem;
+}
+.header .nav-menu-item-links li {
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+  font-size: var(--sm-16);
+}
+.header .nav-menu-item-links li:hover {
+  opacity: 80%;
+  translate: 20px 0;
+}
+.header .nav-menu-item.active .nav-menu-item-btn svg {
+  rotate: 180deg;
+}
+.header .nav-menu-item.active .nav-menu-item-links {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.header.active {
+  width: var(--header-ol);
+}
+.header.active .nav {
+  translate: 0;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 2rem;
+  right: -4.25rem;
+  width: 3.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  box-shadow: 23px 6px 46px -7px rgba(0, 0, 0, 0.1);
+  transition: right 800ms ease-in-out;
+}
+.hamburger-menu .line {
+  width: 100%;
+  height: 0.425rem;
+  background-color: var(--neutral-100);
+  border-radius: 4rem;
+  transform-origin: 12px 3px;
+  transition: rotate 900ms ease-in-out, opacity 1200ms ease-in-out;
+}
+.hamburger-menu .line-2 {
+  opacity: 50%;
+}
+
+.hamburger-menu.active {
+  right: 0.75rem;
+}
+.hamburger-menu.active .line-1 {
+  rotate: 405deg;
+}
+.hamburger-menu.active .line-2 {
+  rotate: -405deg;
+}
+.hamburger-menu.active .line-3 {
+  opacity: 0;
+}
+
+.btn-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  left: -8.5625rem;
+  bottom: 5rem;
+  transition: left 800ms ease-in-out;
+}
+.btn-groups .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-groups .btn-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--blue-800);
+  padding: 1rem;
+  margin: 0;
+  border-radius: 50px;
+  -o-object-position: center;
+     object-position: center;
+}
+.btn-groups .btn-image img {
+  width: 24px;
+}
+.btn-groups .btn p {
+  color: var(--neutral-100);
+  font-size: var(--sm-20);
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  outline: 0;
+}
+.btn-groups .btn:hover p, .btn-groups .btn:focus p {
+  opacity: 50%;
+}
+
+.btn-groups.active {
+  left: 0.4375rem;
+}
+
+@media (min-width: 38.125rem) {
+  .header {
+    width: var(--header-cl);
+    overflow: hidden;
+  }
+  .hamburger-menu {
+    right: 0.75rem;
+  }
+  .btn-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    left: 0.4375rem;
+    bottom: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
