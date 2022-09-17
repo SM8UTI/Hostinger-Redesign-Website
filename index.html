@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;700;800;900&family=Manrope:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="dist/scss/main.css">
@@ -140,16 +142,17 @@
 
         <!-- hero section  -->
         <section class="hero" id="hero">
-            <div class="logo">
+            <div class="logo" data-aos="fade-down">
                 <img src="assets/logo/name-logo.svg" alt="Logo">
             </div>
             <div class="hero-container">
-                <div class="hero-container-textarea">
+                <div class="hero-container-textarea" data-aos="fade-right">
                     <h2>Savings to Set Your <span>Website</span> in Motion</h2>
                     <h1><span>₹</span>149.00<span>/mo</span></h1>
-                    <p>Get things moving with a free domain, lifetime SSL, and DDoS protection included with a four-year
+                    <p>Get things moving with a free domain, lifetime SSL, and DDoS protection
+                        included with a four-year
                         subscription.</p>
-                    <ul class="timer">
+                    <ul class="timer ">
                         <li>
                             <p id="days">00</p>
                             <span>Days</span>
@@ -167,21 +170,68 @@
                             <span>Seconds</span>
                         </li>
                     </ul>
-                    <button class="btn btn-getstarted">
+                    <button class="btn btn-getstarted  ">
                         Get Started
                     </button>
-                    <p class="guarantee">
-                        <img src="assets/vector/correct.svg" alt="correct">Get exclusive 30-day money-back guarantee
+                    <p class="guarantee  ">
+                        <img class="fade" src="assets/vector/correct.svg" alt="correct">Get exclusive 30-day money-back
+                        guarantee
                     </p>
                 </div>
                 <div class="hero-container-vectorarea">
-                    <img class="web" src="assets/vector/web.svg" alt="web vector art">
+                    <img class="web" src="assets/vector/web.svg" alt="web vector art" data-aos="fade-down">
+                </div>
+            </div>
+        </section>
+        <!-- ----- -->
+
+        <!-- pricing section  -->
+        <section class="price" id="price">
+            <div class="company" data-aos="fade-up">
+                <div class="company-logo">
+                    <img src="assets/brands/wordpress.svg" alt="">
+                    <img src="assets/brands/lightspeed.svg" alt="">
+                    <img src="assets/brands/cloudflare.svg" alt="">
+                </div>
+            </div>
+
+            <div class="price-container">
+                <div class="price-container-text">
+                    <h1 data-aos="fade-up">All-In-One Web Hosting
+                    </h1>
+                    <p data-aos="fade-up">We prepared the best web hosting plan for you to start. You will be able
+                        to adjust plans as you
+                        go - our custom-built
+                        algorithm will provide suggestions based on your usage.</p>
+                </div>
+                <div class="down-arrow" data-aos="fade-down">
+                    <img src="assets/vector/arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="price-container-box" data-aos="fade-up">
+                <div class="price-container-box-card">
+                    <ul class="price-container-box-card-list">
+                    </ul>
+                    <div class="price-container-box-card-price">
+                        <h1><span>₹</span>149.00<span>/mo</span></h1>
+                        <p>₹249.00/mo when you renew</p>
+                        <button class="btn btn-select  ">
+                            Select
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- ----- -->
     </main>
     <script src="dist/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 800,
+        });
+    </script>
 </body>
 
 </html>

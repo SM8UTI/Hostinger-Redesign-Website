@@ -17,6 +17,17 @@
     z-index: 99;
 }
 
+.down-arrow{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    img{
+        width: 3.5rem;
+        margin: 2rem 0;
+
+    }
+}
+
 @include breakpoint(mobile){
     .circle{
         display: none;

@@ -1,3 +1,31 @@
+const priceFeatures = [
+    {
+        features:"Unmetered traffic (Unlimited GB)"
+    },
+    {
+        features:"100 Websites"
+    },
+    {
+        features:"100 GB SSD Storage "
+    },
+    {
+        features:"Free Weekly Backups"
+    },
+    {
+        features:"Unlimited Free SSL "
+    },
+    {
+        features:"Free Domain "
+    },
+    {
+        features:"Free Email"
+    },
+    {
+        features:"Optimized for WordPress"
+    },
+]
+
+
 const header = document.getElementById('header');
 const hamMenu = document.getElementById('hamburger-menu');
 const btnGroups = document.querySelector('.btn-groups')
@@ -49,3 +77,13 @@ const formatTime = (time) => {
 }
 
 setInterval(countDownTimer,1000);
+
+
+const priceFetureLists = document.querySelector('.price-container-box-card-list')
+
+for(let i = 0;i<priceFeatures.length;i++){
+    priceFetureLists.innerHTML +=  `<li>
+                            <img src="assets/vector/correct.svg" alt="">
+                            <p>${priceFeatures[i].features}</p>
+                        </li>`
+}
