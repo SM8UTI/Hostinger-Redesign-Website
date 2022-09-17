@@ -1,3 +1,5 @@
+@use "../util/" as *;
+
 :root{
     --mobile-header-cl:0rem;
     --header-cl:4.625rem;
@@ -18,8 +20,9 @@ body{
     font-family: var(--ff-main);
     color: var(--neutral-100);
     background-color: var(--black-100);
-    padding: 2rem 2rem 2rem 8rem;
+    padding: 0rem 1.5rem;
     transition: .5s;
+    width: 100%;
 }
 
 ul{
@@ -29,4 +32,10 @@ ul{
 a{
     color: var(--neutral-100);
     text-decoration: none;
+}
+
+@include breakpoint(mobile){
+    body{
+        padding: 2rem 2rem 2rem 7rem;
+    }
 }

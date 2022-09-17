@@ -1,0 +1,24 @@
+@use "../util/" as *;
+
+.btn{
+    width: max-content;
+    padding: 1rem 4rem;
+    border-radius: 50px;
+}
+
+.circle{
+    width: 10rem;
+    aspect-ratio: 1/1;
+    position: fixed;
+    background-color: var(--blue-500);
+    border-radius: 500px;
+    top: -50px;
+    left: -60px;
+    z-index: 99;
+}
+
+@include breakpoint(mobile){
+    .circle{
+        display: none;
+    }
+}

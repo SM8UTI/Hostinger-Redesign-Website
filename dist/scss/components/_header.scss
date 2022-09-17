@@ -120,7 +120,7 @@
     gap: 0.4rem;
     padding: 0.3rem;
     cursor: pointer;
-    box-shadow: 23px 6px 46px -7px rgba(0, 0, 0, 0.1);
+    // box-shadow: 23px 6px 46px -7px rgba(0, 0, 0, 0.1);
     transition: right 800ms ease-in-out;
 
     .line{
@@ -163,7 +163,7 @@
     transition: left 800ms ease-in-out;
 
 
-    .btn{
+    .btn-groups-btn{
         display: flex;
         flex-direction: row;
         align-items: center;
