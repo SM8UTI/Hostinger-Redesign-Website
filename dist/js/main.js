@@ -23,6 +23,30 @@ const priceFeatures = [
     {
         features:"Optimized for WordPress"
     },
+    {
+        features:"100 Parked domains"
+    },
+    {
+        features:"40 Active Processes"
+    },
+    {
+        features:"Unlimited databases"
+    },
+    {
+        features:"100 Subdomains per account "
+    },
+    {
+        features:"20 Entry Processes"
+    },
+    {
+        features:"3 GB database size"
+    },
+    {
+        features:"Managed WordPress"
+    },
+    {
+        features:"Access Management"
+    },
 ]
 
 
