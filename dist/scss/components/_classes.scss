@@ -30,6 +30,31 @@
     }
 }
 
+.title{
+    &-h1{
+        font-size: var(--md-40);
+        font-weight: 700;
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 4rem;
+            height: 0.2rem;
+            border-radius: 5rem;
+            background:linear-gradient(43.48deg, #4312A5 -3.88%, #6233DF 32.32%, #849BFF 137.32%) ;
+        }
+    }
+    &-p{
+        font-size: var(--sm-16);
+        font-weight: 400;
+        color: var(--gray-100);
+        line-height: 1.7;
+    }
+}
+
 @include breakpoint(mobile){
     .circle{
         display: none;

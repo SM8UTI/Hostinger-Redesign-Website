@@ -14,17 +14,6 @@
             grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
             align-items: center;
             gap: 2rem;
-            h1{
-                font-size: var(--md-40);
-                font-weight: 700;
-                position: relative;
-            }
-            p{
-                font-size: var(--sm-16);
-                font-weight: 400;
-                color: var(--gray-100);
-                line-height: 1.7;
-            }
         }
 
         &-box{

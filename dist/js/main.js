@@ -50,6 +50,7 @@ const priceFeatures = [
 ]
 
 
+
 const header = document.getElementById('header');
 const hamMenu = document.getElementById('hamburger-menu');
 const btnGroups = document.querySelector('.btn-groups')

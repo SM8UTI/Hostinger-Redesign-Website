@@ -1,0 +1,132 @@
+@use "../util/" as *;
+
+.service{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 10rem;
+
+    &-container{
+        display: grid;
+        place-items: center;
+        margin-top:5rem;
+        padding-block: 2rem;
+
+        &-box{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            row-gap: 6rem;
+            position: relative;
+
+            &-list{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: relative;
+                li{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.5rem;
+                    background-color: var(--neutral-100);
+                    padding: 0.5rem;
+                    border-radius: 4px 0.5rem 0.5rem 4px;
+                    border-left: 6px solid var(--blue-500);
+                    p{
+                        color: var(--blue-500);
+                        font-size: var(--sm-16);
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+            &-vector{
+                width:22rem;
+                place-self: center;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+
+                &::before{
+                    content: url(../../../assets/vector/line-2.svg);
+                    position: absolute;
+                    top: -83px;
+                    left: 14px;
+                    rotate: -12deg;
+                } 
+                &::after{
+                    content: url(../../../assets/vector/line-2.svg);
+                    position: absolute;
+                    bottom: -83px;
+                    right: 14px;
+                    rotate: 168deg;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(mobile-2){
+    .service{
+        &-container{
+            &-box{
+                grid-template-columns: 1fr 1fr;
+                row-gap: 2rem;
+                &-list{
+                    place-self: center;
+                    gap: 2rem;
+                }
+                &-vector{
+                    grid-row: span 2;
+
+                    &::before{
+                        top: -119px;
+                        left: 32px;
+                        rotate: 142deg;
+                    }
+
+                    &::after{
+                        bottom: -116px;
+                        right: 254px;
+                        rotate: 238deg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(large){
+    .service{
+        &-container{
+            &-box{
+                grid-template-columns: 1fr 1fr 1fr;
+                &-list{
+
+                }
+
+                &-vector{
+                    grid-column: 2;
+                    grid-row:1/-1;
+
+                    &::before{
+                        top: -66px;
+                        left: 5px;
+                        rotate: 115deg;
+                    }
+
+                    &::after{
+                        bottom: -61px;
+                        right: 13px;
+                        rotate: -64deg;
+                    }
+                }
+            }
+        }
+    }
+}
