@@ -106,10 +106,6 @@
         &-container{
             &-box{
                 grid-template-columns: 1fr 1fr 1fr;
-                &-list{
-
-                }
-
                 &-vector{
                     grid-column: 2;
                     grid-row:1/-1;

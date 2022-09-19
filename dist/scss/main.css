@@ -304,13 +304,18 @@ a {
 }
 .logo {
   position: absolute;
-  top: 2.2rem;
+  top: 2rem;
   right: 2rem;
 }
 .logo img {
   width: 10.25rem;
 }
 
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
 .hero-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -447,6 +452,9 @@ a {
 }
 
 .price {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
   margin-top: 6rem;
 }
 .price-container {

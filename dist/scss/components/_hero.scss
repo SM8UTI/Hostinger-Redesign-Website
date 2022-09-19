@@ -2,7 +2,7 @@
 
 .logo{
     position: absolute;
-    top: 2.2rem ;
+    top: 2rem ;
     right: 2rem;
 
     img{
@@ -11,6 +11,9 @@
 }
 
 .hero{
+        width: 100%;
+            max-width: 1200px;
+            margin-inline: auto;
     &-container{
         display: grid;
         grid-template-columns: 1fr;

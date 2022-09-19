@@ -1,6 +1,9 @@
 @use "../util/" as *;
 
 .price{
+    width: 100%;
+        max-width: 1200px;
+        margin-inline: auto;
     margin-top: 6rem;
 
     &-container{
