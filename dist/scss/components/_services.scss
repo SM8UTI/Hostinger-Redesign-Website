@@ -53,14 +53,14 @@
                 }
 
                 &::before{
-                    content: url(../../../assets/vector/line-2.svg);
+                    content: url('https://raw.githubusercontent.com/SM8UTI/Hostinger-Redesign-Website/main/assets/vector/line-2.svg');
                     position: absolute;
                     top: -83px;
                     left: 14px;
                     rotate: -12deg;
                 } 
                 &::after{
-                    content: url(../../../assets/vector/line-2.svg);
+                    content: url('https://raw.githubusercontent.com/SM8UTI/Hostinger-Redesign-Website/main/assets/vector/line-2.svg');
                     position: absolute;
                     bottom: -83px;
                     right: 14px;
