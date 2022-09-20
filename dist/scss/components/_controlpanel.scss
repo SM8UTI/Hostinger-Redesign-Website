@@ -1,0 +1,72 @@
+@use "../util/" as *;
+
+.controlpanel{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 10rem;
+
+    &-container{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &-box{
+            place-self: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            &-item{
+                background-color: var(--blue-100);
+                border-radius: 1rem;
+                display: grid;
+                gap: 1rem;
+                padding: 2rem;
+                img{
+                    width: 3rem;
+                    justify-self: flex-end;
+                }
+                h2{
+                    font-size: var(--sm-20);
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        &-vector{
+            place-self: center;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include breakpoint(mobile-l){
+    .controlpanel{
+        &-container{
+            grid-template-columns: 1fr;
+            &-box{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@include breakpoint(large){
+    .controlpanel{
+        &-container{
+            grid-template-columns: 1fr 1fr;
+            &-box{
+                grid-template-columns: 1fr 1fr;
+
+                &-item{
+                    &-3{
+                        grid-column: span 2;
+                    }
+                }
+            }
+        }
+    }
+}
