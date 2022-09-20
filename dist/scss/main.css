@@ -455,7 +455,7 @@ a {
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 .price-container {
   width: 100%;
@@ -615,6 +615,7 @@ a {
   position: relative;
 }
 .service-container-box-list li {
+  cursor: pointer;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -624,12 +625,16 @@ a {
   padding: 0.5rem;
   border-radius: 4px 0.5rem 0.5rem 4px;
   border-left: 6px solid var(--blue-500);
+  transition: scale 0.4s ease-in-out;
 }
 .service-container-box-list li p {
   color: var(--blue-500);
   font-size: var(--sm-16);
   font-weight: 700;
   text-transform: capitalize;
+}
+.service-container-box-list li:hover {
+  scale: 1.09;
 }
 .service-container-box-vector {
   width: 22rem;
@@ -694,5 +699,92 @@ a {
     bottom: -61px;
     right: 13px;
     rotate: -64deg;
+  }
+}
+.domain {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 9rem;
+  background-color: var(--blue-100);
+  padding: 4rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.domain-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.domain-container {
+  display: grid;
+  place-items: center;
+  margin: 4rem 0rem 3rem;
+}
+.domain-container-search {
+  position: relative;
+  background-color: var(--neutral-100);
+  width: 100%;
+  max-width: 800px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 1rem;
+  border-radius: 0.4rem;
+}
+.domain-container-search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--blue-800);
+  font-size: var(--sm-16);
+  font-weight: 400;
+}
+.domain-container-search input::-moz-placeholder {
+  font-size: var(--sm-16);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.domain-container-search input:-ms-input-placeholder {
+  font-size: var(--sm-16);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.domain-container-search input::placeholder {
+  font-size: var(--sm-16);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.domain-container-search .search-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 135%;
+  right: 50%;
+  translate: 50% 0;
+  background-color: var(--blue-500);
+  color: var(--neutral-100);
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  font-size: var(--sm-16);
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 2px solid var(--blue-500);
+  transition: all 0.8s ease-in-out;
+}
+.domain-container-search .search-btn:hover, .domain-container-search .search-btn:focus {
+  background-color: var(--blue-800);
+}
+
+@media (min-width: 50.625em) {
+  .domain-text {
+    grid-template-columns: 1fr 1fr;
+  }
+  .domain-container-search .search-btn {
+    top: -3px;
+    right: 90px;
   }
 }/*# sourceMappingURL=main.css.map */

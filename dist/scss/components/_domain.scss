@@ -1,0 +1,92 @@
+@use "../util/"  as *;
+
+.domain{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 9rem;
+    background-color: var(--blue-100);
+    padding:4rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    &-text{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    &-container{
+        display: grid;
+        place-items: center;
+        margin: 4rem 0rem 3rem;
+        &-search{
+            position: relative;
+            background-color: var(--neutral-100);
+            width: 100%;
+            max-width: 800px;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1.5rem 1rem;
+            border-radius: 0.4rem;
+            input{
+                width: 100%;
+                outline: none;
+                border: none;
+                color: var(--blue-800);
+                font-size: var(--sm-16);
+                font-weight: 400;
+
+                &::placeholder{
+                    font-size: var(--sm-16);
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+
+            .search-btn{
+                cursor: pointer;
+                position: absolute;
+                top: 135%;
+                right: 50%;
+                translate: 50% 0;
+                background-color: var(--blue-500);
+                color: var(--neutral-100);
+                padding: 1rem 4rem;
+                border: none;
+                outline: none;
+                font-size: var(--sm-16);
+                letter-spacing: 1px;
+                font-weight: 700;
+                border-radius: 8px;
+                border: 2px solid var(--blue-500);
+                transition: all 0.8s ease-in-out;
+
+                &:hover,&:focus{
+                    background-color: var(--blue-800);
+
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(small){
+    .domain{
+        &-text{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-container{
+            &-search{
+                .search-btn{
+                    top: -3px;
+                    right: 90px;
+                }
+            }
+        }
+    }
+}

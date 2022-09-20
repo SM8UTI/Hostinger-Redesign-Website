@@ -4,7 +4,7 @@
     width: 100%;
         max-width: 1200px;
         margin-inline: auto;
-    margin-top: 6rem;
+    margin-top: 8rem;
 
     &-container{
         width: 100%;
@@ -24,7 +24,6 @@
             background-color: var(--blue-100);
             border-radius: 1rem;
             overflow: hidden;
-            // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
             &-card{
                 display: grid;
@@ -79,7 +78,6 @@
                         }
                     }
                     p{
-                        // color: var(--gray-100);
                         font-size: var(--sm-12);
                         letter-spacing: 1px;
                         font-weight: 500;
@@ -133,7 +131,6 @@
         &-container{
             &-box{
                 &-card{
-                    // grid-template-columns: 1fr 0.4fr;
                     &-list{
                         grid-template-columns: 1fr 1fr;
                         gap: 0.5rem;
