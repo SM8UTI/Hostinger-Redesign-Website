@@ -1,0 +1,89 @@
+@use "../util/" as *;
+
+.testomonial{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 10rem;
+
+    &-container{
+        margin-top: 4rem;
+
+        &-box{
+            &-item{
+                height: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                padding: 1rem;
+                border: 4px solid var(--blue-500);
+                border-radius: 1rem;
+                position: relative;
+                background-color: var(--black-100);
+                img{
+                    position: absolute;
+                    top: -2rem;
+                    right: 1rem;
+                    width: 8rem;
+                    rotate: 15deg;
+                }
+                p{
+                    color: var(--gray-100);
+                }
+                &-profile{
+                    position: absolute;
+                    bottom: 1rem;
+                    left: 1rem;
+                    display: flex;
+                    flex-direction:row;
+                    align-items: center;
+                    gap: 1rem;
+                    img{
+                        position: static;
+                        width: 3rem;
+                        object-fit: cover;
+                        aspect-ratio: 1/1;
+                        border-radius: 10rem;
+                        border:2px solid var(--blue-500);
+                        rotate: 0deg;
+                    }
+                    h2{
+                        font-size: var(--sm-20);
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    max-width: 420px;
+    filter: blur(4px);
+
+    &-shadow{
+        &-left{
+            background-image: none;
+        }
+        &-right{
+            background-image: none;
+        }
+    }
+
+    &-active{
+        filter: blur(0);
+    }
+}
+

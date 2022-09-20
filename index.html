@@ -19,6 +19,9 @@
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="dist/scss/main.css">
 
@@ -373,7 +376,8 @@
                         <a href="#">See all products</a>
                     </div>
                     <div class="details-container-box-video" data-aos="fade-up">
-                        <video src="https://assets.hostinger.com/videos/homepage2020/easy-to-set-up-6e4616539f.mp4"
+                        <video
+                            src="https://assets.hostinger.com/videos/homepage2020/scale-from-micro-to-large-scale-54c553ecb0.mp4"
                             muted autoplay></video>
                     </div>
                 </div>
@@ -424,14 +428,61 @@
         </section>
         <!-- ----- -->
 
+        <!-- testomonials section -->
+        <section class="testomonial" id="testomonial">
+            <h1 class="title-h1" data-aos="fade-up">What our customers are saying</h1>
+            <div class="testomonial-container swiper mySwiper" data-aos="fade-up">
+                <div class="testomonial-container-box swiper-wrapper">
+
+                    <div class="testomonial-container-box-item swiper-slide">
+                        <img src="assets/vector/message-cl.svg" alt="">
+                        <p>As a customer of "Hostinger.com" in Indonesia, I am one of their early customers. I am very
+                            amazed by the service
+                            updates and features that always increase from time to time with competitive prices, safe
+                            and always up to date. Thank
+                            you "Hostinger" as the best hosting company.</p>
+                        <div class="testomonial-container-box-item-profile">
+                            <img src="https://user-images.trustpilot.com/6329b2d1f6f90800124f5fdf/73x73.png" alt="">
+                            <h2>Sauferry</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="arrow">
+                <div class="arrow-container">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+        </section>
+
+
     </main>
     <script src="dist/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         AOS.init({
             offset: 150,
             duration: 800,
         });
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+
     </script>
 </body>
 
