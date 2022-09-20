@@ -1,6 +1,7 @@
 @use "../util/" as *;
 
 .btn{
+    cursor: pointer;
     width: max-content;
     padding: 1rem 4rem;
     border-radius: 50px;
@@ -52,6 +53,7 @@
         font-weight: 400;
         color: var(--gray-100);
         line-height: 1.7;
+        letter-spacing: 1px;
     }
 }
 

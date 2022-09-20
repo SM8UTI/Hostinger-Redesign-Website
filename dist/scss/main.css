@@ -65,6 +65,7 @@ a {
   }
 }
 .btn {
+  cursor: pointer;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -115,6 +116,7 @@ a {
   font-weight: 400;
   color: var(--gray-100);
   line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 38.125rem) {
@@ -474,7 +476,7 @@ a {
   background-color: var(--blue-100);
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .price-container-box-card {
   display: grid;
@@ -562,7 +564,7 @@ a {
   padding: 3rem 1rem;
   position: relative;
   row-gap: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .company-logo img {
   width: 10rem;
@@ -626,6 +628,7 @@ a {
   border-radius: 4px 0.5rem 0.5rem 4px;
   border-left: 6px solid var(--blue-500);
   transition: scale 0.4s ease-in-out;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .service-container-box-list li p {
   color: var(--blue-500);
@@ -708,8 +711,8 @@ a {
   margin-top: 9rem;
   background-color: var(--blue-100);
   padding: 4rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .domain-text {
   display: grid;
@@ -732,7 +735,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   padding: 1.5rem 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
 }
 .domain-container-search input {
   width: 100%;
@@ -786,5 +789,101 @@ a {
   .domain-container-search .search-btn {
     top: -3px;
     right: 90px;
+  }
+}
+.details {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 10rem;
+}
+.details-container {
+  display: grid;
+  gap: 6rem;
+}
+.details-container-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.details-container-box-text {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.details-container-box-text h3 {
+  font-size: var(--sm-12);
+  letter-spacing: 3px;
+  color: var(--pink-500);
+  font-weight: 500;
+}
+.details-container-box-text h3 span {
+  color: var(--neutral-100);
+  background-color: var(--pink-800);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.1rem;
+}
+.details-container-box-text h1 {
+  font-size: var(--md-40);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.details-container-box-text a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem 2.5rem;
+  font-size: var(--sm-16);
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+}
+.details-container-box-text a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 100%;
+  background-color: var(--blue-500);
+  z-index: -1;
+  border-radius: 0.1rem;
+  transition: width 0.5s ease-in-out;
+}
+.details-container-box-text a:hover::before, .details-container-box-text a:focus::before {
+  width: 100%;
+}
+.details-container-box-video {
+  grid-row: 1;
+  place-self: center;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  background-color: var(--neutral-100);
+}
+.details-container-box-video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 47.8125rem) {
+  .details-container-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .details-container-box-video {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .order-2 {
+    grid-row: 1;
+    grid-column: 1;
   }
 }/*# sourceMappingURL=main.css.map */
