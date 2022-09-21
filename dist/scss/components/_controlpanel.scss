@@ -43,16 +43,16 @@
     }
 }
 
-@include breakpoint(mobile-l){
-    .controlpanel{
-        &-container{
-            grid-template-columns: 1fr;
-            &-box{
-                grid-template-columns: 1fr;
-            }
-        }
-    }
-}
+// @include breakpoint(mobile-2){
+//     .controlpanel{
+//         &-container{
+//             grid-template-columns: 1fr;
+//             &-box{
+//                 grid-template-columns: 1fr;
+//             }
+//         }
+//     }
+// }
 
 @include breakpoint(large){
     .controlpanel{
