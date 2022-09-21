@@ -19,7 +19,8 @@ html{
 body{
     font-family: var(--ff-main);
     color: var(--neutral-100);
-    background-color: var(--black-100);
+    // background-color: var(--black-100);
+    background: linear-gradient(43.48deg, #000000 -3.88%, #111111 32.32%, #232323 137.32%);;
     padding: 0rem 1.5rem;
     transition: .5s;
     width: 100%;
