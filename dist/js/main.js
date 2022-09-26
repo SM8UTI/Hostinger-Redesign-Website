@@ -1,3 +1,4 @@
+
 const priceFeatures = [
     {
         features:"Unmetered traffic (Unlimited GB)"
@@ -82,7 +83,16 @@ const navMenu = document.querySelectorAll('.nav-menu-item')
 
 navMenu.forEach((e)=>{
     e.addEventListener("click",()=>{
-        e.classList.toggle("active")
+        if(e.classList.contains("active")){
+            e.classList.toggle('active')
+        }
+        else{
+            navMenu.forEach((f)=>{
+                f.classList.remove('active')
+            })
+
+            e.classList.add('active')
+        }
     })
 })
 
