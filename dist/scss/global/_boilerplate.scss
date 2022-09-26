@@ -6,6 +6,23 @@
     --header-ol:22.25rem;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--black-100);
+    outline: 1px solid slategrey;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black-100);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: var(--blue-500);
+}
+
 *,*::after,*::before{
     box-sizing: border-box;
     margin: 0;
