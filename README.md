@@ -26,6 +26,12 @@ Create redesigned landing page of Hostinger
 - Services section
 - Login/Register page (optionally)
 
+
+
+
+
+
+
 You can also think about different other creative ideas to add into the website. Try not to imitate or clone the website but rather create redesigned version of it using your creativity. Making unrelated websites isn't allowed.
 
 <br/>
