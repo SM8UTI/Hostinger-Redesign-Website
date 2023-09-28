@@ -14,7 +14,7 @@ Here is the `Hostinger Redesigned website` for the [Thapa Technical Codefest 2](
 
 <br/>
 
-Like our previous codefest, this codefest is also creating static website with no need of creating backend of the website. This time, it is compulsory for you to create a redesigned version of Hostinger website. You aren't supposed to create clone of it but to think yourself about how the design can be improved and implement it in code. You have to only code the front-end part, no back-end code is needed.
+Like our previous codefest, this codefest also creates a static website with no need to create a backend of the website. This time, it is compulsory for you to create a redesigned version of the Hostinger website. You aren't supposed to create a clone of it but to think yourself about how the design can be improved and implement it in code. You have to only code the front-end part, no back-end code is needed.
 
 Here are the things that are important/required for your redesigned website:
 
@@ -32,7 +32,7 @@ Create redesigned landing page of Hostinger
 
 
 
-You can also think about different other creative ideas to add into the website. Try not to imitate or clone the website but rather create redesigned version of it using your creativity. Making unrelated websites isn't allowed.
+You can also think about other creative ideas to add to the website. Try not to imitate or clone the website but rather create a redesigned version of it using your creativity. Making unrelated websites isn't allowed.
 
 <br/>
 
@@ -60,7 +60,7 @@ You can also think about different other creative ideas to add into the website.
 
 <br/>
 
-## 📁 File Strutcture :
+## 📁 File Structure :
 
 <br/>
 
