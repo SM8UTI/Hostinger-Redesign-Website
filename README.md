@@ -9,7 +9,6 @@ Here is the `Hostinger Redesigned website` for the [Thapa Technical Codefest 2](
 <br/>
 
 
-
 ## 🖥️ Challenge Description : [Thapa Technical Codefest 2](https://codefest.thapaonlineclass.com/)
 
 <br/>
