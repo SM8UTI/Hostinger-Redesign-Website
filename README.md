@@ -2,8 +2,6 @@
 
 <br/>
 
-
-
 # Hostinger - Redesigned Version Website
 
 Here is the `Hostinger Redesigned website` for the [Thapa Technical Codefest 2](https://codefest.thapaonlineclass.com/).
